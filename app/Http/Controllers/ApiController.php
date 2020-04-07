@@ -29,7 +29,7 @@ class ApiController
             'page_uid' => 'required'
         ]);
 
-        return Article::select('fields')->where('page_uid', $page_uid)->get();
+        return Article::select('fields')->where('page_uid', $page_uid)->orderByDesc('id')->get();
     }
 
 
