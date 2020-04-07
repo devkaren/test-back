@@ -25,7 +25,11 @@ Run the database migrations (**Set the database connection in .env before migrat
 
     php artisan migrate
 
-Add json rpc config
+Publish cors config
+    
+    php artisan vendor:publish --tag="cors"
+
+Publish json rpc config
     
     php artisan vendor:publish --tag="jsonrpc-config"
      
